@@ -1,0 +1,374 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #B4F8C8;
+}
+
+#container {
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: -1em;
+}
+
+nav ul {
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+nav li {
+  background-color: orange;
+  border-radius: 1em 0 1em 0;
+  text-align: center;
+  list-style-type: none;
+  margin: 0.2em;
+  padding: 0.3em;
+}
+
+nav li a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 15%;
+}
+
+.mobile {
+  display: inline;
+}
+
+.desktop {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+main {
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  margin-top: 0.8em;
+  padding: 1.2em;
+  background-color: #A0E7E5;
+}
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1.3em;
+  color: darkblue;
+}
+
+.game_photo {
+  display: none;
+}
+
+main a {
+  background-color:#FBE7C6;
+  padding: 0.3em;
+  color: darkblue;
+  border-radius: 0.3em;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer a{
+  color: darkblue;
+  text-decoration: none;
+}
+
+aside {
+  padding: 0.5em;
+  color: rgb(148, 148, 148);
+}
+
+input, textarea {
+  display: block;
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+@media only screen and (min-width: 561px) {
+  nav {
+    font-size: 1.2em;
+  }
+
+  nav li{
+    display: inline;
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 19%;
+    white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+  .tablet {
+    display: block;
+    margin-top: -0.75em;
+    margin-bottom: -0.75em;
+  }
+  
+  main {
+    font-size: 1.1em;
+    clear: left;
+    margin-top: 0;
+    border-radius: 0;
+    overflow: auto;
+  }
+
+  .game_photo {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  .elements {
+    display: block;
+    list-style-position: inside;
+    list-style-type: circle;
+  }
+
+  dt {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  figure img {
+    background-color: orange;
+    display: inline;
+    height: 7em;
+    width: 7em;
+    padding: 1%;
+    margin-bottom: -0.5em;
+  }
+
+  figure a {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0%;
+  }
+
+  section {
+    padding-bottom: 1.5em;
+  }
+
+  section h1 {
+    text-align: left;
+  }
+
+  section a {
+    background-color: transparent;
+    color: black;
+    font-weight: normal;
+    padding: 0;
+    text-decoration: underline;
+  }
+
+
+  article {
+    float: left;
+    background-color: #FFAEBC;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+    padding: 0.05em;
+    text-align: center;
+    width: 38%;
+  }
+
+  main article img {
+    border: solid 0.1em grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main article p{
+    color: black;
+    margin-top: 2%;
+    padding: 1%;
+    text-align: left;
+  }
+
+  main article dl dt,
+  main article dl dd {
+    text-align: left;
+  }
+
+  aside {
+    background-color: rgb(91, 91, 206);
+    padding: 0.5em;
+    color: rgb(255, 209, 209);
+    border-radius: 0 1em 1em 1em;
+  }
+
+  .flex-display {
+    display: flex;
+  }
+
+  table {
+    border: 0.1em solid rgb(255, 81, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 0.1em solid rgb(255, 81, 0);
+    padding: 1em;
+  }
+
+  td {
+    background-color: white;
+  }
+
+  /* styles for the th */
+  th {
+    background-color: #FBE7C6;
+    color: rgb(72, 176, 211);
+  }
+
+  td {
+    color: rgb(92, 45, 35);
+  }
+
+  /* style for the caption element */
+  caption {
+    font-size: 1.25em;
+    font-style: oblique;
+    font-weight: bolder;
+    padding-bottom: 0.5em;
+  }
+
+  label {
+    padding-right: 0.5em;
+    text-align: left;
+    width: 10em;
+  }
+}
+
+@media only screen and (min-width: 861px) {
+  #container {
+    background-color: #A0E7E5;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  nav ul {
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  #article-heading {
+    display: none;
+  }
+
+  nav li {
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 15%;
+  }
+
+  nav li a {
+    display: inline-block;
+    padding: 0.7em;
+    text-shadow: 0.2em 0.1em #fafad2;
+  }
+
+  #contact {
+    background-color: wheat;
+  }
+
+  main p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .elements {
+    margin-bottom: 6em;
+  }
+
+  nav li a:link {
+    color: darkblue;
+  }
+
+  nav li a:visited {
+    color: purple;
+  }
+
+  nav li a:hover {
+    color: black;
+    font-style: italic;
+  }
+
+  nav li a:active {
+    color: lightblue;
+  }
+
+  body {
+    background-color: #B4F8C8;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  figure img {
+    opacity: 0.65;
+  }
+
+  figure img:hover {
+    opacity: 1;
+  }
+
+  footer {
+    margin-top: -0.2em;
+    padding: 2em;
+  }
+
+}
